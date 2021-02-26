@@ -1,0 +1,14 @@
+{
+  "development": {
+    "username": "sby",
+    "password": "postgresql",
+    "database": "mail",
+    "host": "127.0.0.1",
+    "dialect": "postgres"   
+  }
+
+
+
+
+  
+}

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Group Student</title>
+</head>
+<body>
+  <a href="/logout">Logout</a>
+  <a href="/student/addGroup/<%=data.id%>">Add Group</a>
+  <h2>List Group</h2>
+  <table border="1">
+    <a href=""></a>
+    <tr>
+      <th> No </th>
+      <th> Nama </th>
+      <th> Email Group </th>
+      <th> Option </th>
+    </tr>
+    <% for (let i = 0; i < data.Groups.length; i++) { %>
+      <tr>
+        <td> <%= i + 1 %></td>
+        <td> <%= data.Groups[i].name_group %></td>
+        <td> <%= data.Groups[i].email_group %></td>   
+        <td> <a a href="/student/deleteGroup/<%= data.id%>"> Delete</a> <a href="/student/messageGroup/<%=data.id%>"> | Show Messsages </a> </td>
+      </tr>
+    <% } %>
+  </table>
+
+</body>
+</html>
